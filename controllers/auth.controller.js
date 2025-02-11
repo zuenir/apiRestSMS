@@ -84,7 +84,7 @@ export const signIn = async(req, res, next) =>{
 
 export const signOut = async(req, res, next) =>{
     try {
-
+        console.log("signOut")
     } catch (error) {
         next(error);
     }

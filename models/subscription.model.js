@@ -24,7 +24,7 @@ const subscriptionSchema = new mongoose.Schema({
     },
     category:{
         type:String,
-        num:['sports','news','enterteiment','lifestyle','technology','finance','politics','other'],
+        num:['sports','news','entertaiment','lifestyle','technology','finance','politics','other'],
         required: true
     },
     paymentMethod:{
@@ -47,7 +47,6 @@ const subscriptionSchema = new mongoose.Schema({
     },
     renewalDate:{
         type: Date,
-        required: true,
         validate:{
             validator: function (value) {
                 return value > this.startDate;
